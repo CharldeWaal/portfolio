@@ -1,2 +1,4 @@
-# portfolio
-My personal portfolio website. Built using Gatsby.js, React.js, GraphQL and Styled Components
+# Personal Portfolio
+My personal portfolio website. 
+
+This site was built using ##Gatsby.js, ##React.js, ##GraphQL and ##Styled Components
