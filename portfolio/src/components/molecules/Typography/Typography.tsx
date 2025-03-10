@@ -1,9 +1,9 @@
 import { JSX, useMemo } from "react"
 import { TypographyProps, TypographyVariant } from "./Typography.types"
 import { FontStyle } from "../../atoms/FontStyle/FontStyle";
-import { Transition } from "@/features/transitions";
+import { Animation } from "@/features/animations";
 
-export const Typography = ({ text, variant, bold, italic, strong, code, animation, transitionType, delay, duration, timingFunction, testId }: TypographyProps) => {
+export const Typography = ({ className, text, variant, bold, italic, strong, code, animation, transitionType, delay, duration, timingFunction, testId }: TypographyProps) => {
     const getTestId = (testId: string) => 'typography'.concat(`-${testId}`);
 
     const htmlElement = useMemo(() => {
@@ -34,8 +34,5 @@ export const Typography = ({ text, variant, bold, italic, strong, code, animatio
         return element;
     }, [htmlElement])
 
-
-
-
-    return <Transition animation={animation} transitionType={transitionType} delay={delay} duration={duration} timingFunction={timingFunction}><FontStyle variant={variant} data-testId={getTestId(testId)}>{formattedHtmlElement}</FontStyle></Transition>
+    return <Animation className={className} animation={animation} transitionType={transitionType} delay={delay} duration={duration} timingFunction={timingFunction}><FontStyle variant={variant} data-testId={getTestId(testId)}>{formattedHtmlElement}</FontStyle></Animation>
 }

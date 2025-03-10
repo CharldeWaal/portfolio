@@ -1,4 +1,4 @@
-import { TransitionProps } from "../../../features/transitions/components/Transition/Transition.types";
+import { AnimationProps } from "../../../features/animations/components/Animation/Animation.types";
 
 export enum TypographyVariant {
     Heading1 = 'Heading1',
@@ -10,7 +10,8 @@ export enum TypographyVariant {
     Paragraph = 'Paragraph',
 }
 
-export interface TypographyProps extends TransitionProps {
+export interface TypographyProps extends AnimationProps {
+    className?: string;
     text: string;
     variant: string
     bold?: boolean

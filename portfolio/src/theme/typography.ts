@@ -27,7 +27,7 @@ export interface TypographyStructure {
 export const typography: TypographyStructure = {
     Title: {
         fontFamily: satisfy.className,
-        fontSize: 'text-4xl',
+        fontSize: 'text-5xl',
     },
     Subtitle: {
         fontFamily: inter.className,

@@ -12,7 +12,8 @@ export type TimingFunction = 'ease-linear' | 'ease-in' | 'ease-out' | 'ease-in-o
 
 export type Duration = 'duration-2000';
 
-export type TransitionProps = PropsWithChildren<{
+export type AnimationProps = PropsWithChildren<{
+    className?: string;
     animation?: AnimationType | AnimationType[]
     transitionType?: TransitionType,
     duration?: Duration,
