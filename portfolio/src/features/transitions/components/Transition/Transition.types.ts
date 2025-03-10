@@ -12,8 +12,6 @@ export type TimingFunction = 'ease-linear' | 'ease-in' | 'ease-out' | 'ease-in-o
 
 export type Duration = 'duration-2000';
 
-export type Opacity = 'opacity-0' | 'opacity-100';
-
 export type TransitionProps = PropsWithChildren<{
     animation?: AnimationType | AnimationType[]
     transitionType?: TransitionType,
